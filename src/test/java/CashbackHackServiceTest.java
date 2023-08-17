@@ -1,7 +1,7 @@
 import org.example.CashbackHackService;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertEquals;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
