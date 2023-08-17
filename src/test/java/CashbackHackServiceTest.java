@@ -1,24 +1,25 @@
 import org.example.CashbackHackService;
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.assertEquals;
+
 
 public class CashbackHackServiceTest {
-    @Test
+    @org.junit.Test
     public void testRemain () {
         CashbackHackService service = new CashbackHackService();
-        int amount = 1000;
+        int amount = 2300;
         int actual = service.remain(amount);
-        int expected = 0;
+        int expected = 700;
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void testRemainCash () {
         CashbackHackService service = new CashbackHackService();
-        int amount = 900;
+        int amount = 5000;
         int actual = service.remain(amount);
-        int expected = 100;
+        int expected = 0;
         assertEquals(expected, actual);
+
     }
 }
